@@ -3,13 +3,13 @@
 ## terraform インストール
 
 ```bash
-$ brew install terraform
+brew install terraform
 ```
 
 ## tflint インストール
 
 ```bash
-$ brew install tflint
+brew install tflint
 ```
 
 ## vscode 拡張機能インストール
@@ -26,7 +26,7 @@ chsh -s /bin/BASH
 ## autocomplete 設定
 
 ```bash
-$ terraform --install-autocomplete
+terraform --install-autocomplete
 ```
 
 ## tfenv インストール
