@@ -1,7 +1,7 @@
 terraform {
   required_version = "0.14.3"
   required_providers {
-    mycloud = {
+    aws = {
       source  = "hashicorp/aws"
       version = "3.22.0"
     }
@@ -13,6 +13,6 @@ terraform {
   }
 }
 
-provider "mycloud" {
+provider "aws" {
   region = "ap-northeast-1"
 }
