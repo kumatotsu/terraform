@@ -29,5 +29,5 @@ module "example_sg" {
   name        = "module-sg"
   vpc_id      = aws_vpc.example.id
   port        = 80
-  cide_blocks = ["0.0.0.0/0"]
+  cidr_blocks = ["0.0.0.0/0"]
 }
