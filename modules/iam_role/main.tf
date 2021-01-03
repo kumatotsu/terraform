@@ -1,6 +1,6 @@
 variable "name" {}
 variable "policy" {}
-variable "identifer" {}
+variable "identifier" {}
 
 data "aws_iam_policy_document" "ec2_assume_role" {
   statement {
@@ -8,7 +8,7 @@ data "aws_iam_policy_document" "ec2_assume_role" {
 
     principals {
       type        = "Service"
-      identifiers = [var.identifer]
+      identifiers = [var.identifier]
     }
   }
 }
