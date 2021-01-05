@@ -1,4 +1,5 @@
 # セキュリティグループ
+
 # resource "aws_security_group" "example" {
 #   name   = "example"
 #   vpc_id = aws_vpc.example.id
@@ -24,6 +25,7 @@
 #   security_group_id = aws_security_group.example.id
 # }
 
+# moudleで定義
 module "example_sg" {
   source      = "../modules/security_group"
   name        = "module-sg"
