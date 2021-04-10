@@ -12,14 +12,14 @@
 # The resources that were imported are shown above. These resources are now in
 # your Terraform state and will henceforth be managed by Terraform.
 
-data "aws_route53_zone" "example" {
-  name = "tostu-example.work"
-}
+# data "aws_route53_zone" "example" {
+#   name = "tostu-example.work"
+# }
 
-resource "aws_route53_zone" "tostu_example_work" {
-  comment = "テストドメイン"
-  name    = data.aws_route53_zone.example.name
-}
+# resource "aws_route53_zone" "tostu_example_work" {
+#   comment = "テストドメイン"
+#   name    = data.aws_route53_zone.example.name
+# }
 
 # resource "aws_route53_record" "example" {
 #   zone_id = data.aws_route53_zone.example.zone_id
